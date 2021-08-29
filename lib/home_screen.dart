@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:trock_driver/components/logo_container.dart';
 import 'package:trock_driver/components/user_account_container.dart';
+import 'package:trock_driver/constents.dart';
+
+import 'components/total_delivered_container.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -35,7 +38,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       hintStyle: TextStyle(color: Colors.grey[600]),
                       hintText: "Search for markets ...",
                       fillColor: Colors.white70),
-                )
+                ),
+                SizedBox(height: 30),
+                TotalDeliveredContainer()
               ],
             ),
           ),
