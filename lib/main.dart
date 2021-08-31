@@ -12,7 +12,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Truck Driver',
-      home: HomeScreen(),
+      home:
+          Directionality(textDirection: TextDirection.rtl, child: HomeScreen()),
     );
   }
 }

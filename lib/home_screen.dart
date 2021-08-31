@@ -21,9 +21,12 @@ class _HomeScreenState extends State<HomeScreen> {
             padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
             child: Column(
               children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [LogoContainer(), UserContainer()],
+                Directionality(
+                  textDirection: TextDirection.ltr,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [LogoContainer(), UserContainer()],
+                  ),
                 ),
                 SizedBox(
                   height: 30,

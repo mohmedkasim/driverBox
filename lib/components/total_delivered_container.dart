@@ -59,7 +59,7 @@ class TotalDeliveredContainer extends StatelessWidget {
             ),
             Positioned(
                 bottom: 10,
-                right: 10,
+                left: 10,
                 child: Image.asset('assets/images/car.png',
                     width: MediaQuery.of(context).size.width / 3))
           ],
