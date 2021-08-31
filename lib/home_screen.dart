@@ -39,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       filled: true,
                       hintStyle: TextStyle(color: Colors.grey[600]),
-                      hintText: "Search for markets ...",
+                      hintText: "بحث عن متاجر...",
                       fillColor: Colors.white70),
                 ),
                 SizedBox(height: 30),
