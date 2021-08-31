@@ -10,7 +10,7 @@ class TotalDeliveredContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: 100,
+        height: 110,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           color: cPrimaryColor,
@@ -23,14 +23,14 @@ class TotalDeliveredContainer extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Total Delivered',
+                    'مجموع الموصل',
                     style: TextStyle(color: Colors.white),
                   ),
-                  SizedBox(height: 5),
+                  SizedBox(height: 10),
                   Row(
                     children: [
                       Text(
-                        'Today',
+                        'اليوم',
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
