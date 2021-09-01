@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:trock_driver/components/logo_container.dart';
 import 'package:trock_driver/components/user_account_container.dart';
 
-import 'components/list_view_item.dart';
-import 'components/my_schedule_container.dart';
-import 'components/total_delivered_container.dart';
-import 'constents.dart';
+import '../components/list_view_item.dart';
+import '../components/my_schedule_container.dart';
+import '../components/total_delivered_container.dart';
+import '../constents.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
