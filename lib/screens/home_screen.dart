@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:trock_driver/components/logo_container.dart';
 import 'package:trock_driver/components/user_account_container.dart';
+import 'package:trock_driver/screens/order_request_screen.dart';
 
 import '../components/list_view_item.dart';
 import '../components/my_schedule_container.dart';
@@ -130,7 +131,15 @@ class _HomeScreenState extends State<HomeScreen> {
                     },
                     itemBuilder: (BuildContext context, int index) {
                       return ListViewItem(
-                          value1: "2021-02-12", value2: "9:00 PM");
+                          value1: "2021-02-12",
+                          value2: "9:00 PM",
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        OrderRequestScreen()));
+                          });
                     },
                   ),
                 ),
