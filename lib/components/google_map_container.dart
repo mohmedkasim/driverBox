@@ -42,6 +42,7 @@ class MapContainerState extends State<MapContainer> {
           body: GoogleMap(
         initialCameraPosition: CameraPosition(
             target: LatLng(_originLatitude, _originLongitude), zoom: 15),
+        zoomControlsEnabled: false,
         myLocationEnabled: true,
         tiltGesturesEnabled: true,
         compassEnabled: true,
