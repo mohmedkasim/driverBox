@@ -20,7 +20,7 @@ class _OrderRequestScreenState extends State<OrderRequestScreen> {
               child: Directionality(
                 textDirection: TextDirection.rtl,
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     Container(
                       color: Colors.grey,
@@ -170,25 +170,59 @@ class _OrderRequestScreenState extends State<OrderRequestScreen> {
                           SizedBox(height: 20),
                           Text(
                             'البضائع',
-                            style: TextStyle(fontSize: 18),
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.bold),
                           ),
                           SizedBox(height: 5),
-                          Container(
-                            height: 150,
-                            child: ListView.builder(
-                                scrollDirection: Axis.horizontal,
-                                primary: false,
-                                shrinkWrap: true,
-                                itemCount: 5,
-                                itemBuilder: (context, index) {
-                                  return ListViewItem(
-                                      value1: "تلفاز 12 بوصة",
-                                      value2: "الكمية 5");
-                                }),
-                          )
                         ],
                       ),
                     ),
+                    Container(
+                      height: 100,
+                      child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          primary: false,
+                          shrinkWrap: true,
+                          itemCount: 5,
+                          itemBuilder: (context, index) {
+                            return ListViewItem(
+                                value1: "تلفاز 12 بوصة", value2: "الكمية 5");
+                          }),
+                    ),
+                    SizedBox(height: 10),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 25),
+                      child: Row(
+                        children: [
+                          Text('ملاحظات',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 18)),
+                          SizedBox(width: 10),
+                          Container(
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(15),
+                                  color: cSecondaryColor),
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 10, vertical: 4),
+                                child: Text('قابل للكسر',
+                                    style: TextStyle(color: Colors.white)),
+                              ))
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        child: RaisedButton(
+                            color: cPrimaryColor,
+                            onPressed: () {},
+                            child: Text(
+                              "إستلام توصيل",
+                              style: TextStyle(color: Colors.white),
+                            )),
+                      ),
+                    )
                   ],
                 ),
               ),
