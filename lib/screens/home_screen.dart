@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:trock_driver/components/logo_container.dart';
 import 'package:trock_driver/components/user_account_container.dart';
+import 'package:trock_driver/screens/loading_items_screen.dart';
 import 'package:trock_driver/screens/order_request_screen.dart';
 
 import '../components/list_view_item.dart';
@@ -85,7 +86,15 @@ class _HomeScreenState extends State<HomeScreen> {
                     },
                     itemBuilder: (BuildContext context, int index) {
                       return ListViewItem(
-                          value1: "PM 12:00", value2: "Samsung");
+                        value1: "PM 12:00",
+                        value2: "Samsung",
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => LoadingItemsScreen()));
+                        },
+                      );
                     },
                   ),
                 ),
