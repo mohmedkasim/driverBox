@@ -3,6 +3,8 @@
    <application
         android:label="trock_driver"
         android:icon="@mipmap/ic_launcher">
+       <meta-data android:name="com.google.android.geo.API_KEY"
+           android:value="AIzaSyAJsxa7g9Tf8_jkRKyf6S0PjRFKhjLp-5g"/>
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
