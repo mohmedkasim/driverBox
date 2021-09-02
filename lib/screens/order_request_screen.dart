@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dash/flutter_dash.dart';
+import 'package:trock_driver/components/google_map_container.dart';
 import 'package:trock_driver/components/list_view_item.dart';
 import 'package:trock_driver/constents.dart';
 
@@ -24,11 +25,29 @@ class _OrderRequestScreenState extends State<OrderRequestScreen> {
                   children: [
                     Container(
                       color: Colors.grey,
-                      height: MediaQuery.of(context).size.height / 3,
+                      height: MediaQuery.of(context).size.height / 2,
                       child: Stack(
                         children: [
                           Container(
-                            height: MediaQuery.of(context).size.height / 3,
+                            child: MapContainer(),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(15.0),
+                            child: Align(
+                              alignment: Alignment.topLeft,
+                              child: GestureDetector(
+                                onTap: () => Navigator.pop(context),
+                                child: Container(
+                                  child: CircleAvatar(
+                                    child: Icon(
+                                      Icons.arrow_forward,
+                                      color: Colors.black,
+                                    ),
+                                    backgroundColor: Colors.white,
+                                  ),
+                                ),
+                              ),
+                            ),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(15.0),
