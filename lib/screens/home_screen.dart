@@ -25,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Column(
               children: [
                 Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+                    padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
                     child: Column(
                       children: [
                         Directionality(
@@ -100,7 +100,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 SizedBox(height: 10),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+                  padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
                   child: MyScheduleContainer(),
                 ),
                 Padding(

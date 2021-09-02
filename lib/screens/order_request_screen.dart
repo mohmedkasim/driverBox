@@ -82,7 +82,7 @@ class _OrderRequestScreenState extends State<OrderRequestScreen> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 30),
+                      padding: const EdgeInsets.symmetric(horizontal: 15),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
@@ -130,7 +130,7 @@ class _OrderRequestScreenState extends State<OrderRequestScreen> {
                               Text('الليثي، شركة تك كيوب'),
                             ],
                           ),
-                          SizedBox(height: 20),
+                          SizedBox(height: 30),
                           Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
@@ -186,7 +186,7 @@ class _OrderRequestScreenState extends State<OrderRequestScreen> {
                               ),
                             ),
                           ),
-                          SizedBox(height: 20),
+                          SizedBox(height: 30),
                           Text(
                             'البضائع',
                             style: TextStyle(
@@ -230,6 +230,7 @@ class _OrderRequestScreenState extends State<OrderRequestScreen> {
                         ],
                       ),
                     ),
+                    SizedBox(height: 30),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Container(
@@ -237,7 +238,7 @@ class _OrderRequestScreenState extends State<OrderRequestScreen> {
                             color: cPrimaryColor,
                             onPressed: () {},
                             child: Text(
-                              "إستلام توصيل",
+                              "تولي توصيل",
                               style: TextStyle(color: Colors.white),
                             )),
                       ),
