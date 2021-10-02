@@ -35,10 +35,11 @@ class LoginScreen extends StatelessWidget {
               child: Column(
                 children: [
                   Text(
-                    'Welcome!',
+                    'مرحبا!',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
-                  Text('Sing in to continue'),
+                  SizedBox(height: 5),
+                  Text('سجل دخول لإستمرار'),
                   SizedBox(height: 20),
                   TextField(
                     decoration: InputDecoration(
