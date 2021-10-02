@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trock_driver/screens/loginScreen.dart';
 
 import 'screens/home_screen.dart';
 
@@ -14,8 +15,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: "almarai"),
       title: 'Truck Driver',
-      home:
-          Directionality(textDirection: TextDirection.rtl, child: HomeScreen()),
+      home: Directionality(
+          textDirection: TextDirection.rtl, child: LoginScreen()),
     );
   }
 }
